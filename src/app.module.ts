@@ -1,7 +1,6 @@
 import { Module } from '@nestjs/common';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
-import { GrpcService } from './grpc/grpc.service';
 import { AuthController } from './auth/auth.controller';
 import { AuthModule } from './auth/auth.module';
 import { ConfigModule } from '@nestjs/config';
@@ -17,6 +16,6 @@ import { StreamRecognitionModule } from './stream-recognition/stream-recognition
     StreamRecognitionModule,
   ],
   controllers: [AppController, AuthController],
-  providers: [AppService, GrpcService],
+  providers: [AppService],
 })
 export class AppModule {}

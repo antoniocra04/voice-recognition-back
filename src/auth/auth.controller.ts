@@ -15,7 +15,7 @@ export class AuthController {
 
     try {
       const response = await axios.post(
-        'https://3i-vox.ru/oauth/token',
+        'https://3i-vox.3itech-ca.kz/oauth/token',
         {
           grant_type: 'password',
           username,

@@ -30,7 +30,7 @@ export class StreamRecognitionService {
 
   constructor() {
     const creds = grpc.credentials.createSsl();
-    this.client = new proto.vox.asr.SttService('stt.3i-vox.ru:443', creds);
+    this.client = new proto.vox.asr.SttService('3i-vox.3itech-ca.kz', creds);
   }
 
   createStreamingCall(
