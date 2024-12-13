@@ -13,7 +13,7 @@ import { StreamRecognitionGateway } from './stream-recognition.gateway';
         transport: Transport.GRPC,
         options: {
           package: 'vox.asr',
-          protoPath: join(__dirname, '../proto/asr_api.proto'),
+          protoPath: join(__dirname, '../grpc/protos/asr_api.proto'),
           url: 'stt.3i-vox.ru:443',
         },
       },

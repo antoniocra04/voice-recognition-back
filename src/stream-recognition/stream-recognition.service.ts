@@ -11,7 +11,7 @@ import {
 import * as ffmpeg from 'fluent-ffmpeg';
 import { PassThrough } from 'stream';
 
-const PROTO_PATH = join(__dirname, '../proto/asr_api.proto');
+const PROTO_PATH = join(__dirname, '../grpc/protos/asr_api.proto');
 const packageDefinition = loadSync(PROTO_PATH, {
   keepCase: true,
   longs: String,
